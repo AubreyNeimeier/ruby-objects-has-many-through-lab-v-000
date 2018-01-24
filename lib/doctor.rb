@@ -32,6 +32,7 @@ attr_accessor :name
   def add_appointment(appointment)
     @appointments << appointment
     appointment.doctor = self
+    #we tell the appoint which doctor it belongs to
   end
 
   def appointments
