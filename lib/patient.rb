@@ -28,6 +28,7 @@ class Patient
   def add_appointment(appointment)
     @appointments << appointment
     appointment.patient = self
+    #we tell the appoint which patient it belongs to.
   end
 
   def doctors
