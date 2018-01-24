@@ -10,10 +10,10 @@ Use the Doctor#add_appointment method here.
 
 
 class Appointment
-  attr_accessor :doctor, :patient, :appointment
+  attr_accessor :doctor, :patient, :date
 
-  def initialize(appointment, doctor)
-    @appointment = appointment
+  def initialize(date, doctor)
+    @date = date
     @doctor = doctor
     doctor.add_appointment(self)
     #when a new appointment is initialized, we should tell that doctor to add it to its list of appointments
